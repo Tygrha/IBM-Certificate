@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2d46f93abcf82cd46e4102a0cbdefd6f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2d46f93abcf82cd46e4102a0cbdefd6f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2d46f93abcf82cd46e4102a0cbdefd6f = L.map(
+                "map_2d46f93abcf82cd46e4102a0cbdefd6f",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_37613b5acd4ccf6870aaf6afb9b074a0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            var circle_marker_7656428755345332748266849e56bb7c = L.circleMarker(
+                [40.7128, -74.006],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 45, "stroke": true, "weight": 0}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            circle_marker_7656428755345332748266849e56bb7c.bindTooltip(
+                `<div>
+                     Location: New York, NY<br>Time Spent: 7 years
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bd3230d029959b672471a9377661bae3 = L.circleMarker(
+                [41.0339, -73.7643],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 0}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            circle_marker_bd3230d029959b672471a9377661bae3.bindTooltip(
+                `<div>
+                     Location: Westchester, NY<br>Time Spent: 2 years
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_493ea435397c3631e5591ce1b1c597d8 = L.polyline(
+                [[40.7128, -74.006], [41.0339, -73.7643]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 3.2}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            var circle_marker_e36f8a4948a513aba41b3cea61617594 = L.circleMarker(
+                [40.4406, -79.9959],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 55, "stroke": true, "weight": 0}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            circle_marker_e36f8a4948a513aba41b3cea61617594.bindTooltip(
+                `<div>
+                     Location: Pittsburgh, PA<br>Time Spent: 9 years
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f42f99b56e3e3c31f4e1c82fd31a5e44 = L.polyline(
+                [[41.0339, -73.7643], [40.4406, -79.9959]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 4.0}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            var circle_marker_2f175180c8c86e78c3815e985cf521e1 = L.circleMarker(
+                [42.3601, -71.0589],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25, "stroke": true, "weight": 0}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            circle_marker_2f175180c8c86e78c3815e985cf521e1.bindTooltip(
+                `<div>
+                     Location: Boston, MA<br>Time Spent: 3 years
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_e447d0793411ad7987bd46fd80329ed2 = L.polyline(
+                [[40.4406, -79.9959], [42.3601, -71.0589]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 7.6}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            var circle_marker_f9c578c8b746923d8bb54c3abd18abc8 = L.circleMarker(
+                [38.9072, -77.0379],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 0}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            circle_marker_f9c578c8b746923d8bb54c3abd18abc8.bindTooltip(
+                `<div>
+                     Location: Washington, D.C.<br>Time Spent: 4 years
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_0a69168b8000d28587e0a61bbb3b9083 = L.polyline(
+                [[42.3601, -71.0589], [38.9072, -77.0379]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 8.8}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            var circle_marker_55a610ae36a1ac4df907a920cc540360 = L.circleMarker(
+                [42.3314, -83.0458],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 0}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            circle_marker_55a610ae36a1ac4df907a920cc540360.bindTooltip(
+                `<div>
+                     Location: Detroit, MI<br>Time Spent: 1 years
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_ce452bdd175f976c1c06d50ac13fbbaa = L.polyline(
+                [[38.9072, -77.0379], [42.3314, -83.0458]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 10.4}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            var circle_marker_ba21b59724885bca49987b4ed69ca113 = L.circleMarker(
+                [40.2338, -111.6585],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 0}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            circle_marker_ba21b59724885bca49987b4ed69ca113.bindTooltip(
+                `<div>
+                     Location: Provo, UT<br>Time Spent: 2 years
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_af298b0129c1613b6d2cf5506a3252e0 = L.polyline(
+                [[42.3314, -83.0458], [40.2338, -111.6585]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 10.8}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            var circle_marker_4a24fb4465173a7186bcd50132b9b447 = L.circleMarker(
+                [38.9072, -77.0379],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.15, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15, "stroke": true, "weight": 0}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+    
+            circle_marker_4a24fb4465173a7186bcd50132b9b447.bindTooltip(
+                `<div>
+                     Location: Washington, D.C.<br>Time Spent: 1 years
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_633525bc55aa1a2913b37ff79fd985e6 = L.polyline(
+                [[40.2338, -111.6585], [38.9072, -77.0379]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.25, "smoothFactor": 1.0, "stroke": true, "weight": 11.6}
+            ).addTo(map_2d46f93abcf82cd46e4102a0cbdefd6f);
+        
+</script>
+</html>
